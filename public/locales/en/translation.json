@@ -1,0 +1,87 @@
+
+{
+    "dir":"ltr",
+    "navitem":{
+        "logo":"HarlsCapital",
+        "items":["Home","Courses","Road Map","About","Contact"],
+        "button":"Register Now"
+    },
+    "hero":{
+        "title":"HARLS CAPITAL",
+        "description":"At HARLS CAPITAL, we are more than just a Forex trading company, We are a specialized team committed to providing the best investment solutions based on science and precise analysis.",
+        "button":"View Courses",
+        "slogen":"Trusted by over 10,000+ students worldwide"
+    },
+    "register":["Register Now","Join our community and start learning today","Create your account","First Name","Last Name","Email Address","Phone Number","Register"],
+    "trialvideos":{
+        "title":["Free Trial Videos","Sample our premium content with these free trial videos"],
+        "firstvideo":{
+            "title":"Introduction",
+            "description":"With this educational video, you can truly enter the world of forex, The basics are fully explained to you in detail so you can follow along."
+        },
+        "secondvideo":{
+            "title":"TradingView Platform",
+            "description":"In this video, we explain step-by-step how to use the Trading View platform. Its one of the most powerful tools for monitoring financial markets and analyzing charts.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, sint."
+        },
+        "button":"Watch Preview"
+    },
+    "roadmap":{
+        "title":"Your Learning Roadmap",
+        "description":"Follow our proven path to master your skills and achieve your goals",
+        
+        "one":{
+            "title":"Company Introduction",
+            "description":"Get to know the company and join the public channel",
+            "details":["Join HARLS CAPITAL-TRADER channel","Learn about company services","Access introductory content"]
+        },
+        "two":{
+            "title":"Essential Training",
+            "description":"Learn account management and platform usage",
+            "details":["Join PACKAGE-HARLS CAPITAL channel","Learn account opening process","Deposit/withdrawal procedures","Platform usage tutorials"]
+        },
+        "three":{
+            "title":"Trading Recommendations",
+            "description":"Access market signals and analysis tools",
+            "details":["Join HARLS-FOREX SIGNALS channel","Access VIP recommendations","Learn analysis tools usage","Get trading recommendations"]
+        },
+        "four":{
+            "title":"Professional Education",
+            "description":"Enroll in comprehensive trading course",
+            "details":["Register for professional course","Understand markets in depth","Build personal trading strategy","Advanced market analysis"]
+        },
+        "five":{
+            "title":"Ongoing Support",
+            "description":"Get assistance at every stage of your journey",
+            "details":["Contact Support account","Account opening assistance","Deposit/withdrawal help","Platform usage support"]
+        }
+    },
+    "about":{
+        "title":"About Us",
+        "description":"Learn more about our mission and values",
+        "Our Story":"Our Story",
+        "one":"We believe that success in the Forex market is not luck, but the result of extensive experience and well-studied strategies, Recommendations are the core of our services; we provide accurate daily trading recommendations that achieve remarkable profit rates, giving our clients confidence to make their investment decisions with certainty.",
+        "two":["Why Choose HARLS CAPITAL?","- Deep and diverse experience in financial markets","- Full commitment to transparency and professionalism","- A supportive educational environment including advanced market analysis courses","- Services focused on achieving real results","- Continuous support and personal follow-up for each client to ensure sustainable success"],
+        "three":"At HARLS CAPITAL, our goal is to be your true partner on your journey toward financial independence. We guide, support, and empower you to achieve the best results with the least amount of risk.",
+        "icons":["Students","Courses","Awards","Success Rate"]
+    },
+    "our values":{
+        "Quality Education":["Quality Education","We are committed to providing the highest quality educational content and experiences."],
+        "Accessibility":["Accessibility","We believe education should be accessible to everyone, regardless of background or location."],
+        "Innovation":["Innovation","We continuously innovate our teaching methods and curriculum to stay ahead of industry trends."],
+        "Student Success":["Student Success","We measure our success by the achievements and career advancements of our students."]
+    },
+    "contact":{
+        "title":"Contact Us",
+        "description":"Have questions? We're here to help",
+        "elements":["Phone","Email","Location"],
+        "tail":"Connect With Us",
+        "form":{
+            "Send us a message":"Send us a message",
+            "Your Name":"Your Name",
+            "Email Address":"Email Address",
+            "Subject":"Subject",
+            "Message":"Message",
+            "Send":"Send Meesege"
+        }
+    }
+}
