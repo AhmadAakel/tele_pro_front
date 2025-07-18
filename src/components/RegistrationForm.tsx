@@ -4,10 +4,10 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import axios from 'axios';
 
-const API_BASE_URL = 'https://telepro-production.up.railway.app//api';
+const REACT_APP_API_URL = 'https://telepro-production.up.railway.app//api';
 
 const api = axios.create({
-  baseURL: API_BASE_URL,
+  baseURL: process.env.REACT_APP_API_URL,
   headers: {
     'Content-Type': 'application/json',
   },
