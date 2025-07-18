@@ -4,10 +4,9 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import axios from 'axios';
 
-const REACT_APP_API_URL = 'https://telepro-production.up.railway.app//api';
-
+// ✅ Axios instance using Vercel environment variable fallback
 const api = axios.create({
-  baseURL: process.env.REACT_APP_API_URL,
+  baseURL: process.env.REACT_APP_API_URL || 'https://telepro-production.up.railway.app/api',
   headers: {
     'Content-Type': 'application/json',
   },
@@ -15,6 +14,7 @@ const api = axios.create({
 
 const RegistrationForm = () => {
   const { t } = useTranslation();
+
   const [formData, setFormData] = useState({
     firstname: '',
     lastname: '',
@@ -57,16 +57,16 @@ const RegistrationForm = () => {
   };
 
   const validate = () => {
-    const newErrors = {};
-    if (!formData.firstname.trim()) newErrors.firstname = t('register.3') + ' is required';
-    if (!formData.lastname.trim()) newErrors.lastname = t('register.4') + ' is required';
+    const newErrors: Record<string, string> = {};
+    if (!formData.firstname.trim()) newErrors.firstname = `${t('register.3')} is required`;
+    if (!formData.lastname.trim()) newErrors.lastname = `${t('register.4')} is required`;
     if (!formData.email.trim()) {
-      newErrors.email = t('register.5') + ' is required';
+      newErrors.email = `${t('register.5')} is required`;
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      newErrors.email = t('register.5') + ' is invalid';
+      newErrors.email = `${t('register.5')} is invalid`;
     }
     if (!formData.phone) {
-      newErrors.phone = t('register.6') + ' is required';
+      newErrors.phone = `${t('register.6')} is required`;
     } else if (formData.phone.length < 10) {
       newErrors.phone = 'Please enter a valid phone number';
     }
@@ -79,7 +79,7 @@ const RegistrationForm = () => {
   };
 
   const validateVerificationCode = () => {
-    const newErrors = {};
+    const newErrors: Record<string, string> = {};
     if (!verificationData.verification_code.trim()) {
       newErrors.verification_code = 'Verification code is required';
     }
@@ -141,8 +141,6 @@ const RegistrationForm = () => {
 
     try {
       const response = await verifyCode(verificationData.email, verificationData.verification_code);
-
-      // ✅ Redirect to Telegram channel
       if (response.redirect_url) {
         window.location.href = response.redirect_url;
       } else {
@@ -160,9 +158,7 @@ const RegistrationForm = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-[#2c2928]">{t('register.0')}</h2>
-          <p className="mt-4 text-lg text-gray-600">
-            {t('register.1')}
-          </p>
+          <p className="mt-4 text-lg text-gray-600">{t('register.1')}</p>
         </div>
 
         <div className="max-w-md mx-auto bg-[#D9D9D9] rounded-lg overflow-hidden shadow-lg">
